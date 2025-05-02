@@ -26,7 +26,7 @@ VERSION = RELEASE.full_version  # Retained for backward compatibility
 HOSTNAME = platform.node()
 # Set the base directory two levels up
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
+print(f"BASE_DIR: {BASE_DIR}")
 # Validate Python version
 if sys.version_info < (3, 10):
     raise RuntimeError(
@@ -522,6 +522,10 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'project-static', 'js'),
     ('docs', os.path.join(BASE_DIR, 'project-static', 'docs')),  # Prefix with /docs
 )
+
+print(f"STATICFILES_DIRS: {STATICFILES_DIRS}")
+print(f"BASE_PATH: {BASE_PATH}")
+print(f"STATIC_URL: {STATIC_URL}")
 
 # Media URL
 MEDIA_URL = f'/{BASE_PATH}media/'

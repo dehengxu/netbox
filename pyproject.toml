@@ -20,3 +20,15 @@ exclude = [
 ]
 reportMissingImports = true
 reportMissingTypeStubs = false
+
+[project]
+name = "netbox"
+version = "v4.2.9"
+description = "A simple example project"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+readme = "README.md"  # 如果有 README 文件
+license = { text = "MIT" }  # 根据你的项目许可证进行修改
+
+[tool.setuptools.packages.find]
+include = [ "account", "circuits", "core", "dcim", "extras", "ipam" , "media", "netbox", "reports", "scripts", "tenancy", "users", "utilities", "virtualization", "vpn", "wireless", "*.py"]
+where = ["netbox"]

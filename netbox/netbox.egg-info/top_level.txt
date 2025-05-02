@@ -1,0 +1,16 @@
+account
+circuits
+core
+dcim
+extras
+ipam
+media
+netbox
+reports
+scripts
+tenancy
+users
+utilities
+virtualization
+vpn
+wireless
